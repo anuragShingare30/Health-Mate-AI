@@ -55,7 +55,7 @@ export const theme = {
         foreground: "hsl(var(--accent-foreground))",
       },
       popover: {
-        DEFAULT: "hsl(var(--popover))",
+        DEFAULT: "hsl(var(--popover))", 
         foreground: "hsl(var(--popover-foreground))",
       },
       card: {
@@ -88,7 +88,7 @@ export const theme = {
 export const plugins = [
   require("tailwindcss-animate"), 
   require('daisyui'), 
-  addVariablesForColors,
+  addVariablesForColors, 
   function ({ matchUtilities, theme }) {
     matchUtilities(
       {

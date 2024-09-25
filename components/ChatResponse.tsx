@@ -46,6 +46,8 @@ const ChatResponse: React.FC = () => {
     setMessages((prevMessages) => [...prevMessages, { role: 'user', content: userInput }]);
     mutate(userInput);
     setUserInput("");
+    console.log(data);
+    
   };
 
   const handleInput = (e: ChangeEvent<HTMLInputElement>) => {
@@ -78,10 +80,10 @@ const ChatResponse: React.FC = () => {
       <div>
         <div className="h-[screen] flex flex-col justify-center  items-center px-4 mt-20">
           <PlaceholdersAndVanishInput
+            
             placeholders={placeholders}
             onChange={handleInput}
-            onSubmit={handleSubmit}
-            
+            onSubmit={handleSubmit} 
           />
         </div>
       </div>
@@ -90,3 +92,14 @@ const ChatResponse: React.FC = () => {
 }
 
 export { ChatResponse };
+
+
+// {
+//   response: [
+//     {
+//       heading: 'Methods of Diagnosis',
+//       context: 'Describing diagnostic approaches',
+//       points: [Array]
+//     }
+//   ]
+// }

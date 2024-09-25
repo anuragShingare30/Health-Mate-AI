@@ -7,7 +7,7 @@ function ChatHeading() {
       text: "Chat|", 
     },
     {
-      text: "Explore|",
+      text: "Explore|", 
     },
     {
       text: "Learn|",
@@ -17,7 +17,7 @@ function ChatHeading() {
     },
     {
       text: "AI HealthCare Assistant.",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-indigo-500 dark:text-blue-500",
     },
   ];
   return (
